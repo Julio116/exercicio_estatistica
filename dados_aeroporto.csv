@@ -1,0 +1,11 @@
+passageiro,voo,companhia,origem,destino,status,horario_previsto,portao
+joão,az123,AZUL,recife,Salvador,chegada,14:00,B2
+Maria ,Az123,azul,recife,salvador,CHEGADA,14:00,B2
+maria,AZ123,AZUL,Recife,SALVADOR,chegada,14:00,b2
+João,gol456,GOL,sao paulo,Brasilia,partida,15:45,C1
+CARLOS,GOL 456,GOL,São Paulo,brasilia,Partida,15:45,C1
+Carlos,gol 456,Gol,são paulo,BRASILIA,PARTIDA,15:45,C1
+ana,latam789,Latam,RIO,FORTALEZA,Atrasado,17:20,D3
+Ana,LATAM789,LATAM,Rio de Janeiro,Fortaleza,atrasado,17:20,D3
+PEDRO,laTAM789,latam,rio,fortaleza,embarcado,,d3
+pedro,latam789,LATAM,RIO,fortaleza,EMBARCADO,17:20,D3

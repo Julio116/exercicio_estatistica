@@ -1,0 +1,11 @@
+nome,idade,estado,tempo_resposta,satisfacao
+Ana,32,SP,5.4,alto
+bruno,,RJ ,"7,2",médio
+Carla,45,SP,8.0,baixo
+daniel,-,sp,,médio
+Elisa,28,MG,6.5,alto
+felipe,39,MG,7.1,baixo
+Gabriela,51,RJ,"6,8",médio
+henrique,23,SP,5.9,alto
+Iara,,SP,7.5,médio
+joao,34,mg,"7,3",baixo
