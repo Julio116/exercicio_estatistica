@@ -33,7 +33,11 @@ def calc_moda(lista_csv, coluna):
     
     # mais de uma moda falta
     frequencias_lista = list(frequencias.values())
-    moda = max(frequencias_lista)
+    moda_val = max(frequencias_lista)
+
+    for freq_item in frequencias.items():
+        if freq_item[1] == moda_val:
+            moda = freq_item[0]
     
     return moda
 
@@ -63,4 +67,19 @@ def calc_mediana(lista_csv, coluna):
 
 
 def calc_variancia(lista_csv, coluna):
-    pass
+    coluna_indice = lmp.get_coluna_index(lista_csv, coluna)
+    coluna_elementos = []
+
+    for linha in lista_csv[1:]:
+        coluna_elementos.append(linha[coluna_indice])
+    
+    media = calc_media(lista_csv, coluna)
+
+    variancia = 0
+
+    for elem in coluna_elementos:
+        variancia += (media - elem) ** 2
+    
+    variancia /= len(coluna_elementos)
+
+    return variancia
