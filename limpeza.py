@@ -37,6 +37,24 @@ def limpeza_str(lista_csv, colunas):
     return lista_csv
 
 
+def tirar_espaco_vazio_str(lista_csv, colunas_str):
+    for coluna in colunas_str:
+        coluna_index = get_coluna_index(lista_csv, coluna)
+
+        coluna = []
+
+        for col_elem in lista_csv[1:]:
+            col_elem = col_elem[coluna_index].split(' ')
+            col_elem = ''.join(col_elem)
+            coluna.append(col_elem)
+        
+        for i in range(1, len(coluna) + 1):
+            # print(coluna[i-1], lista_csv[coluna_index])
+            lista_csv[coluna_index] = coluna[i-1]
+    
+    return lista_csv
+
+
 def limpeza_numeros(lista_csv, colunas, tipo_num):
     """Higienizar as colunas numericas"""
     header = lista_csv[0]

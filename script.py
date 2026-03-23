@@ -68,5 +68,8 @@ with open(aeroporto_path, newline='') as csv_file:
     aeroporto_lista = lmp.limpeza_str(aeroporto_lista,
         ['passageiro', 'voo', 'companhia', 'origem', 'destino', 'status', 'portao'])
     
+    aeroporto_lista = lmp.tirar_espaco_vazio_str(aeroporto_lista, ['voo'])
+    
+    # print('############')
     # for l in aeroporto_lista:
     #     print(l)
